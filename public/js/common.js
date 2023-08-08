@@ -121,7 +121,7 @@ $(".material-popup").click(function(){
     $(this).fadeOut(300);
 })
 
-$(".back").click(function(){
+$(".page_nav .back").click(function(){
     history.back();
 })
 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>青森活</title>
+</head>
+<body class="bg-gray">
+    <nav class="page_nav bg-light">
+        <img class="w-100" src="./public/img/nav_inner.png" alt="">
+        <ul class="d-flex align-items-center justify-content-center">
+            <li>
+                <a href="./group.html">
+                    <span>達</span>
+                    <span>笙</span>
+                    <span>團</span>
+                    <span>隊</span>
+                </a>
+                <ul class="page_nav_second">
+                    <li><a href="./group_concept.html">建築理念</a></li>
+                    <li><a href="./group_designer.html">建築團隊</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./future.html">
+                    <span>未</span>
+                    <span>來</span>
+                    <span>發</span>
+                    <span>展</span>
+                </a>
+            </li>
+            <li>
+                <a href="./life.html">
+                    <span>人</span>
+                    <span>文</span>
+                    <span>生</span>
+                    <span>活</span>
+                </a>
+            </li>
+            <li>
+                <a href="./plan.html">
+                    <span>建</span>
+                    <span>築</span>
+                    <span>規</span>
+                    <span>劃</span>
+                </a>
+            </li>
+            <li>
+                <a href="./quality_material.html" class="active">
+                    <span>建</span>
+                    <span>築</span>
+                    <span>品</span>
+                    <span>味</span>
+                </a>
+                <ul class="page_nav_second">
+                    <li><a href="./quality_material.html">名品建材</a></li>
+                    <li><a href="./quality_method.html" class="active">建築工法</a></li>
+                </ul>
+            </li>
+            <li class="back"><img src="./public/img/btn-back2.svg" alt=""></li>
+        </ul>
+        <a href="./index.html" class="logo"><img src="./public/img/logo.svg" alt=""></a>
+    </nav>
+
+    <div class="structure">
+        <div class="structure_head d-flex align-items-end justify-content-between">
+            <div class="title-second p-0" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="en">Structural<br>Reinforcement</h2>
+                <h1 class="ch">建築工法 - 防水工程</h1>
+            </div>
+            <ul class="nav nav-pills structure_tab" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a href="./quality_method_waterproof_bath.html" class="nav-link">浴室牆面地坪</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="./quality_method_waterproof_terrace.html" class="nav-link">露台地坪</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="./quality_method_waterproof_roof.html" class="nav-link">屋頂板</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active">外牆</a>
+                </li>
+            </ul>
+        </div>
+        <div class="waterproof wall">
+            <div class="waterproof_text">
+                <h3 class="waterproof_title">外牆全棟防水</h3>
+                <ul class="waterproof_list">
+                    <li>
+                        <span class="active waterproof_list_item" id="wallList-1" data-video="videoContent-1">1.窗框周邊結構面塗佈防水30cm寬</span>
+                        <div class="remark">→ 角隅45度角貼附抗裂玻纖網</div>
+                    </li>
+                    <li><span class="waterproof_list_item" id="wallList-2" data-video="videoContent-2">2.立窗框崁縫</span></li>
+                    <li>
+                        <span class="waterproof_list_item" id="wallList-3" data-video="videoContent-3">３.崁縫周邊結構面塗佈防水</span>
+                    </li>
+                    <li><span class="waterproof_list_item" id="wallList-4" data-video="videoContent-4">4.泥作粉刷外牆面</span></li>
+                    <li><span class="waterproof_list_item" id="wallList-5" data-video="videoContent-5">5.外牆防水打底</span></li>
+                    <li><span class="waterproof_list_item" id="wallList-6" data-video="videoContent-6">6.防水一層、防水二層</span></li>
+                    <li><span class="waterproof_list_item" id="wallList-7" data-video="videoContent-7">7.鋪設外牆磚 → 塞水路<span class="sm">(矽利康)</span></span></li>
+                </ul>
+            </div>
+            <div class="waterproof_video">
+                <div class="waterproof_video_main" id="waterproof_video_main">
+                    <video class="video active" id="videoContent-1" data-list="wallList-1" src="./public/video/wall_1.webm" autoplay></video>
+                    <video class="video" id="videoContent-2" data-list="wallList-2" src="./public/video/wall_2.webm"></video>
+                    <video class="video" id="videoContent-3" data-list="wallList-3" src="./public/video/wall_3.webm"></video>
+                    <video class="video" id="videoContent-4" data-list="wallList-4" src="./public/video/wall_4.webm"></video>
+                    <video class="video" id="videoContent-5" data-list="wallList-5" src="./public/video/wall_5.webm"></video>
+                    <video class="video" id="videoContent-6" data-list="wallList-6" src="./public/video/wall_6.webm"></video>
+                    <video class="video" id="videoContent-7" data-list="wallList-7" src="./public/video/wall_7.webm"></video>
+                </div>
+                <p>此為3D示意圖 僅供參考</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script src="./public/js/video.js"></script>
+
+
+</body>
+</html>

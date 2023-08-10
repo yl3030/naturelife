@@ -2947,6 +2947,11 @@ ul {
   left: 25%;
 }
 
+.future-price_item:hover {
+  -webkit-transform: scale(1.2) !important;
+          transform: scale(1.2) !important;
+}
+
 .future-price_logo {
   position: absolute;
   width: 4.48vw;
@@ -3039,6 +3044,27 @@ ul {
   }
 }
 
+.popup-future {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 195, 192, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 15;
+  cursor: pointer;
+  display: none;
+}
+
+.popup-future_content {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .life_title {
   position: absolute;
   color: #595959;
@@ -3123,9 +3149,9 @@ ul {
 
 .life_map {
   position: absolute;
-  width: 50vw;
-  left: 30vw;
-  top: -0.8vw;
+  width: 52vw;
+  left: 28vw;
+  top: -2.3vw;
 }
 
 .life_map > img {
@@ -3163,7 +3189,7 @@ ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 98%;
-  top: 1.5%;
+  top: 5.3%;
 }
 
 .life_map_item#traffic .map {
@@ -3181,14 +3207,14 @@ ul {
 .life_map_item#life {
   left: 1.3%;
   width: 97%;
-  top: 1.9%;
+  top: 5.8%;
 }
 
 .life_map_item#life .shop-1 {
   position: absolute;
   width: 24.4%;
-  top: 19.1%;
-  right: 14.1%;
+  top: 18%;
+  right: 14%;
   cursor: pointer;
 }
 
@@ -3203,7 +3229,7 @@ ul {
 .life_map_item#life .shop-3 {
   position: absolute;
   width: 13.7%;
-  top: 55%;
+  top: 53%;
   right: 23%;
   cursor: pointer;
 }
@@ -3211,8 +3237,8 @@ ul {
 .life_map_item#life .shop-4 {
   position: absolute;
   width: 15.5%;
-  top: 66%;
-  right: 15.1%;
+  top: 63.6%;
+  right: 15.3%;
   cursor: pointer;
 }
 
@@ -3220,8 +3246,8 @@ ul {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 98%;
-  top: 1.5%;
+  width: 97%;
+  top: 5.5%;
 }
 
 .life_map_item#school .map {
@@ -3231,7 +3257,7 @@ ul {
 .life_map_item#school .school-1 {
   position: absolute;
   width: 4.6%;
-  top: 52%;
+  top: 49%;
   right: 46.2%;
   cursor: pointer;
 }
@@ -3239,7 +3265,7 @@ ul {
 .life_map_item#school .school-2 {
   position: absolute;
   width: 4.6%;
-  top: 57%;
+  top: 54.5%;
   right: 46.2%;
   cursor: pointer;
 }
@@ -3248,8 +3274,8 @@ ul {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 98%;
-  top: 1.5%;
+  width: 97%;
+  top: 5.5%;
 }
 
 .life_map_item#leisure .map {
@@ -3259,15 +3285,15 @@ ul {
 .life_map_item#leisure .forest {
   position: absolute;
   width: 16.2%;
-  top: 50.5%;
-  left: 1.4%;
+  top: 48.5%;
+  left: 1.2%;
   cursor: pointer;
 }
 
 .life_map_item#leisure .ecopark {
   position: absolute;
   width: 13%;
-  top: 33%;
+  top: 32%;
   left: 27.1%;
   cursor: pointer;
 }
@@ -3275,7 +3301,7 @@ ul {
 .life_map_item#leisure .park-1 {
   position: absolute;
   width: 5.1%;
-  top: 23.9%;
+  top: 22.9%;
   right: 37.2%;
   cursor: pointer;
 }
@@ -3283,7 +3309,7 @@ ul {
 .life_map_item#leisure .park-2 {
   position: absolute;
   width: 5.1%;
-  top: 30%;
+  top: 28.5%;
   right: 37.2%;
   cursor: pointer;
 }
@@ -3291,7 +3317,7 @@ ul {
 .life_map_item#leisure .Xpark {
   position: absolute;
   width: 3.2%;
-  top: 21.4%;
+  top: 26.4%;
   right: 32%;
   cursor: pointer;
 }
@@ -3299,56 +3325,90 @@ ul {
 .life_map_item#leisure .shinkong {
   position: absolute;
   width: 3.2%;
-  top: 26.5%;
+  top: 31%;
   right: 32%;
   cursor: pointer;
+  display: none;
 }
 
 .life_map_item#leisure .gloria {
   position: absolute;
   width: 4%;
-  top: 31%;
+  top: 35.3%;
   right: 31.3%;
   cursor: pointer;
+  display: none;
 }
 
 .life_map_item#leisure .park-3 {
   position: absolute;
   width: 5.2%;
-  top: 16.5%;
-  right: 30.6%;
+  top: 18.2%;
+  right: 30.1%;
   cursor: pointer;
 }
 
 .life_map_item#leisure .park-4 {
   position: absolute;
   width: 5.1%;
-  top: 21%;
-  right: 12.6%;
+  top: 20%;
+  right: 12%;
   cursor: pointer;
 }
 
 .life_map_item#leisure .ikea {
   position: absolute;
   width: 5.8%;
-  top: 25.7%;
-  right: 18.5%;
+  top: 24.7%;
+  right: 18%;
   cursor: pointer;
 }
 
 .life_map_item#leisure .park-5 {
   position: absolute;
   width: 4.9%;
-  top: 45%;
-  right: 28%;
+  top: 42.5%;
+  right: 27.5%;
   cursor: pointer;
 }
 
 .life_map_item#leisure .court {
   position: absolute;
-  width: 4.6%;
-  top: 56.5%;
-  right: 28.5%;
+  width: 3%;
+  top: 53.5%;
+  right: 29%;
+  cursor: pointer;
+}
+
+.life_map_item#leisure .pool {
+  position: absolute;
+  width: 5.5%;
+  top: 53.5%;
+  right: 44.6%;
+  cursor: pointer;
+}
+
+.life_map_item#leisure .drama {
+  position: absolute;
+  width: 5.5%;
+  top: 16.2%;
+  right: 29.6%;
+  cursor: pointer;
+}
+
+.life_map_item#leisure .cozzl {
+  position: absolute;
+  width: 5%;
+  top: 23.5%;
+  right: 30.6%;
+  cursor: pointer;
+}
+
+.life_map_item#leisure .global {
+  position: absolute;
+  width: 3.5%;
+  top: 45.4%;
+  right: 28.3%;
   cursor: pointer;
 }
 
@@ -5205,6 +5265,12 @@ ul {
   right: 3.14vw;
 }
 
+.material_inner.semi .material_inner_side_content li {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .material_inner.semi .material_inner_side_content li.fsc::after {
   position: absolute;
   content: "";
@@ -5216,6 +5282,10 @@ ul {
   background-repeat: no-repeat;
   top: 0%;
   left: -3.5vw;
+}
+
+.material_inner.semi .material_inner_side_content li:hover {
+  color: #e53535;
 }
 
 .material_inner.semi .material_inner_side_hide_inner {
@@ -5400,6 +5470,27 @@ ul {
 
 .material_inner.door .material_inner_side.active .material_inner_logo.fbe h4 {
   font-size: 42px;
+}
+
+.material_inner.mitsu .row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.material_inner.mitsu .row > div {
+  padding: 0 2.5vw;
+}
+
+.material_inner.mitsu .material_inner_logo {
+  margin-bottom: 0;
+}
+
+.material_inner.mitsu .material_inner_logo > img {
+  width: 10.25vw;
+}
+
+.material_inner.mitsu.sideContent .material_inner_side_content {
+  margin-top: 1vw;
 }
 
 @media screen and (min-width: 2500px) {
@@ -5642,6 +5733,52 @@ ul {
 }
 
 .material-popup_content_inner img.active {
+  display: block;
+}
+
+.material-popup_slider {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.material-popup_slider .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.material-popup_slider .swiper-container .swiper-slide > img {
+  display: block;
+}
+
+.material-popup_slider_arrow-next, .material-popup_slider_arrow-prev {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0;
+}
+
+.material-popup_slider_arrow-next img, .material-popup_slider_arrow-prev img {
+  width: 100%;
+  display: block;
+}
+
+.material-popup_slider_arrow-prev {
+  left: -5vw;
+}
+
+.material-popup_slider_arrow-next {
+  right: -5vw;
+}
+
+.material-popup_slider > img {
+  display: block;
+}
+
+.material-popup_slider.active {
   display: block;
 }
 

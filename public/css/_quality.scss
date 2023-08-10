@@ -929,6 +929,8 @@
                 &_side {
                     &_content {
                         li {
+                            cursor: pointer;
+                            transition: $transition;
                             &.fsc {
                                 &::after {
                                     position: absolute;
@@ -942,6 +944,9 @@
                                     top: 0%;
                                     left: -3.5vw;
                                 }
+                            }
+                            &:hover {
+                                color: #e53535;
                             }
                         }
                     }
@@ -1092,6 +1097,28 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        &.mitsu {
+            .row {
+                width: 90%;
+                margin: 0 auto;
+                >div {
+                    padding: 0 2.5vw;
+                }
+            }
+            .material_inner {
+                &_logo {
+                    margin-bottom: 0;
+                    >img {
+                        width: 10.25vw;
+                    }
+                }
+            }
+            &.sideContent {
+                .material_inner_side_content {
+                    margin-top: 1vw;
                 }
             }
         }
@@ -1410,6 +1437,46 @@
                     display: block;
                 }
             }
+        }
+    }
+    &_slider {
+        width: 100%;
+        height: 100%;
+        display: none;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+                >img {
+                    display: block;
+                }
+            }
+        }
+        &_arrow {
+            &-next, &-prev {
+                position: absolute;
+                width: 3vw;
+                height: 3vw;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            &-prev {
+                left: -5vw;
+            }
+            &-next {
+                right: -5vw;
+            }
+        }
+        >img {
+            display: block;
+        }
+        &.active {
+            display: block;
         }
     }
     @media screen and (min-width: 2500px) {

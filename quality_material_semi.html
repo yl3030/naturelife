@@ -86,10 +86,11 @@
             </div>
             <div class="material_inner_side_content">
                 <ul>
-                    <li class="fsc">德國品質保證布蘭登堡州<br>FSC原樹林材</li>
-                    <li>超智慧專利鎖扣技術</li>
-                    <li>防潮底層，抗潮不變形</li>
-                    <li>高效能隔音墊降噪</li>
+                    <li class="fsc semi-list" data-popup="#semiPopup-1">歐盟認證原樹林</li>
+                    <li class="semi-list" data-popup="#semiPopup-2">6項結構特性</li>
+                    <li class="semi-list" data-popup="#semiPopup-3">鎖扣專利</li>
+                    <li class="semi-list" data-popup="#semiPopup-4">德國橡膠隔音墊</li>
+                    <li class="semi-list" data-popup="#semiPopup-5">各大證書認證</li>
                 </ul>
             </div>
             <div class="material_inner_side_hide">
@@ -111,6 +112,62 @@
         </div>
     </div>
 
+    <div class="material-popup">
+        <div class="material-popup_bg"></div>
+        <div class="material-popup_content">
+            <div class="material-popup_content_border">
+                <div class="material-popup_content_inner">
+                    <div class="material-popup_slider" id="semiPopup-1">
+                        <div class="swiper-container semiPopup-1_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-3.png" alt=""></div>
+                            </div>     
+                        </div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-next"><img src="./public/img/arrow-next-2.png" alt=""></div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-prev"><img src="./public/img/arrow-prev-2.png" alt=""></div>
+                    </div>
+                    <div class="material-popup_slider" id="semiPopup-2">
+                        <div class="swiper-container semiPopup-1_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-5.png" alt=""></div>
+                            </div>     
+                        </div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-next"><img src="./public/img/arrow-next-2.png" alt=""></div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-prev"><img src="./public/img/arrow-prev-2.png" alt=""></div>
+                    </div>
+                    <div class="material-popup_slider" id="semiPopup-3">
+                        <img src="./public/img/semi-popup-6.png" alt="">
+                    </div>
+                    <div class="material-popup_slider" id="semiPopup-4">
+                        <div class="swiper-container semiPopup-1_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-7.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-8.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-9.png" alt=""></div>
+                            </div>     
+                        </div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-next"><img src="./public/img/arrow-next-2.png" alt=""></div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-prev"><img src="./public/img/arrow-prev-2.png" alt=""></div>
+                    </div>
+                    <div class="material-popup_slider" id="semiPopup-5">
+                        <div class="swiper-container semiPopup-1_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-10.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-11.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/semi-popup-12.png" alt=""></div>
+                            </div>     
+                        </div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-next"><img src="./public/img/arrow-next-2.png" alt=""></div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-prev"><img src="./public/img/arrow-prev-2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -126,6 +183,18 @@
             navigation: {
                 nextEl: ".semi-swiper_next",
                 prevEl: ".semi-swiper_prev",
+            },
+            loop: true, 
+            speed: 800,
+        })
+
+        var swiper_popup_1 = new Swiper(".semiPopup-1_swiper", {
+            slidesPerView: 1,
+            observeParents:true,
+            observer:true,  
+            navigation: {
+                nextEl: ".material-popup_slider_arrow-next",
+                prevEl: ".material-popup_slider_arrow-prev",
             },
             loop: true, 
             speed: 800,

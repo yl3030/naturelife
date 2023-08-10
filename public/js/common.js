@@ -117,11 +117,34 @@ $(".material_inner_main_item").click(function(){
     }
 })
 
-$(".material-popup").click(function(){
-    $(this).fadeOut(300);
+$(".semi-list").click(function(){
+    if(!$(this).hasClass("nopopup")) {
+        let popup = $(this).data("popup");
+        $(".material-popup").fadeIn(300).css("display","flex");
+        $(popup).addClass("active").siblings(".material-popup_slider").removeClass("active");
+    }
 })
+
+// $(".material-popup").click(function(){
+//     $(this).fadeOut(300);
+// })
+
+$(".material-popup").click(function (event) {
+    var arrow = $(".material-popup_slider_arrow");
+    if (!arrow.is(event.target) && arrow.has(event.target).length === 0) {
+        $(this).fadeOut(300);
+    }
+});
 
 $(".page_nav .back").click(function(){
     history.back();
 })
 
+$(".future-price_item").click(function(){
+    let popup = $(this).data("popup");
+    $(popup).fadeIn(300);
+})
+
+$(".popup-future").click(function(){
+    $(this).fadeOut(300);
+})

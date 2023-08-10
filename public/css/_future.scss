@@ -976,6 +976,7 @@
         position: absolute;
         width: 9vw;
         cursor: pointer;
+        // transition: $transition !important;
         &.item-1 {
             top: 12%;
             left: 52%;
@@ -991,6 +992,9 @@
         &.item-4 {
             bottom: 11%;
             left: 25%;
+        }
+        &:hover {
+            transform: scale(1.2) !important;
         }
     }
     &_logo {
@@ -1052,5 +1056,24 @@
     }
     100% {
         transform: scale(1.01);
+    }
+}
+
+.popup-future {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 195, 192, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 15;
+    cursor: pointer;
+    display: none;
+    &_content {
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

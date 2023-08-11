@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/aos/aos.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <title>青森活</title>
@@ -94,7 +95,16 @@
     </div>
 
     <div class="popup-future" id="popup-a18">
-        <img class="popup-future_content" src="./public/img/popup-a18.png" alt="">
+        <div class="popup-future_swiper">
+            <div class="swiper-container popup-a18_swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./public/img/popup-a18.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./public/img/popup-a18-2.png" alt=""></div>
+                </div>     
+            </div>
+            <div class="popup-future_swiper-arrow popup-future_swiper-next"><img src="./public/img/arrow-next-2.png" alt=""></div>
+            <div class="popup-future_swiper-arrow popup-future_swiper-prev"><img src="./public/img/arrow-prev-2.png" alt=""></div>
+        </div>
     </div>
 
     <div class="popup-future" id="popup-a19">
@@ -108,7 +118,19 @@
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/common.js"></script>
+
+    <script>
+        var swiper = new Swiper(".popup-a18_swiper", {
+            slidesPerView: 1,
+            loop: true,
+            navigation: {
+                nextEl: ".popup-future_swiper-next",
+                prevEl: ".popup-future_swiper-prev",
+            },
+        })
+    </script>
 </body>
 </html>

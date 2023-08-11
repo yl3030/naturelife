@@ -366,6 +366,7 @@
     display: none;
     top: 0;
     left: 0;
+    cursor: pointer;
     &_bg {
         position: absolute;
         width: 100%;
@@ -411,6 +412,16 @@
                 // object-fit: contain;
                 object-fit: cover;
             }
+        }
+        &_remark {
+            color: #fff;
+            margin: 0;
+            // font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            top: 1vw;
+            right: 1.5vw;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.2);
         }
     }
     .tree-1 {

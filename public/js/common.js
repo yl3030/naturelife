@@ -14,8 +14,11 @@ $(".map-element").click(function(){
     }
 })
 
-$(".popup_bg").click(function(){
-    $(this).parents(".popup").fadeOut(300);
+$(".popup").click(function(){
+    var arrow = $(".bus-swiper_arrow");
+    if (!arrow.is(event.target) && arrow.has(event.target).length === 0) {
+        $(this).fadeOut(300);
+    }
 })
 
 $(".plan_nav_title").click(function(){
@@ -146,5 +149,8 @@ $(".future-price_item").click(function(){
 })
 
 $(".popup-future").click(function(){
-    $(this).fadeOut(300);
+    var arrow = $(".popup-future_swiper-arrow");
+    if (!arrow.is(event.target) && arrow.has(event.target).length === 0) {
+        $(this).fadeOut(300);
+    }
 })

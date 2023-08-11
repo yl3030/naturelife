@@ -216,6 +216,8 @@
             }
         }
         &.pound {
+            width: 80%;
+            margin-right: auto;
             .structure_main {
                 &_pic {
                     width: 65%;
@@ -273,6 +275,13 @@
                 font-size: 21px;
                 font-weight: 600;
                 margin: 0;
+            }
+            &.joint {
+                .structure_real_pic {
+                    background-size: cover;
+                    background-position: bottom left;
+                    background-repeat: no-repeat;
+                }
             }
         }
         &_pic {
@@ -879,6 +888,8 @@
             }
             .hcg_content {
                 width: 85%;
+                margin: 0 auto;
+                padding-left: 5%;
                 &_top {
                     margin-bottom: 1.6vw;
                     &_item {
@@ -893,7 +904,7 @@
                             width: 38%;
                         }
                         &:last-child {
-                            width: 37%;
+                            width: 21%;
                         }
                     }
                 }
@@ -1201,6 +1212,69 @@
             &.sideContent {
                 .material_inner_side_content {
                     margin-top: 1vw;
+                }
+            }
+        }
+        &.intercom {
+            .material_inner {
+                &_logo {
+                    >img {
+                        width: 11.34vw;
+                    }
+                }
+            }
+            .intercom_content {
+                padding-left: 2.93vw;
+                display: flex;
+                width: 100%;
+                &_customer {
+                    width: 45%;
+                    border-right: 1px solid #000;
+                    padding-right: 2.08vw;
+                    .intercom_content_title {
+                        border: 1px solid #000;
+                    }
+                }
+                &_host {
+                    width: 55%;
+                    padding-left: 2.08vw;
+                    .intercom_content_title {
+                        border: 1px solid #99CC00;
+                        background-color: #99CC00;
+                    }
+                    &_top {
+                        display: flex;
+                        align-items: center;
+                    }
+                    &_pic {
+                        width: 40%;
+                    }
+                    &_text {
+                        width: 60%;
+                        padding-left: 2.25vw;
+                    }
+                }
+                &_title {
+                    width: fit-content;
+                    margin: 0 auto 1vw;
+                    font-size: 32px;
+                    font-weight: 600;
+                    padding:3px 45px;
+                    border-radius: 100px;
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                span {
+                    font-weight: 600;
+                    font-size: 16px;
+                    display: block;
+                    margin: 0;
+                }
+                img {
+                    width: 100%;
                 }
             }
         }

@@ -1069,11 +1069,34 @@
     z-index: 15;
     cursor: pointer;
     display: none;
-    &_content {
+    &_content, &_swiper {
         position: absolute;
         width: 70%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    &_swiper {
+        .swiper-slide {
+            img {
+                width: 100%;
+            }
+        }
+        &-next, &-prev {
+            width: 3vw;
+            height: 3vw;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            >img {
+                width: 100%;
+            }
+        }
+        &-next {
+            right: -4vw;
+        }
+        &-prev {
+            left: -4vw;
+        }
     }
 }

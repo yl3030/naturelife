@@ -21,7 +21,7 @@ body {
         background-position: right center;
     }
     &.bg-semi {
-        background-image: url(../img/semi_bg.png);
+        background-image: url(../img/semi_bg.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -435,6 +435,14 @@ ul {
         font-family: $notoSerif;
         margin: 0;
         transform: translateY(30%);
+    }
+    &.white {
+        color: #fff;
+        .en {
+            &::after {
+                background-color: #fff;
+            }
+        }
     }
     @media screen and (min-width: 2500px) {
         .en {

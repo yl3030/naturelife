@@ -69,7 +69,7 @@
         <a href="./index.html" class="logo"><img src="./public/img/logo.svg" alt=""></a>
     </nav>
 
-    <div class="title-second" data-aos="fade-up" data-aos-duration="800">
+    <div class="title-second white" data-aos="fade-up" data-aos-duration="800">
         <h2 class="en">Selection of<br>Building Materials</h2>
         <h1 class="ch">名品建材</h1>
     </div>
@@ -97,14 +97,22 @@
                 <div class="material_inner_side_hide_inner d-flex align-items-center">
                     <img class="prize" src="./public/img/prize.png" alt="">
                     <div class="semi-slider">
-                        <div class="swiper-container semi-swiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><img src="./public/img/semi-work-1.png" alt=""></div>
-                              <div class="swiper-slide"><img src="./public/img/semi-work-2.png" alt=""></div>
-                            </div>   
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./public/img/semi-work-1.png" alt="">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./public/img/semi-work-2.png" alt="">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <img class="semi-swiper_prev" src="./public/img/arrow-prev.png" alt="">
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <img class="semi-swiper_next" src="./public/img/arrow-next.png" alt="">  
+                            </button>
                         </div>
-                        <img class="semi-swiper_prev" src="./public/img/arrow-prev.png" alt="">
-                        <img class="semi-swiper_next" src="./public/img/arrow-next.png" alt="">  
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ body.bg-solar {
 }
 
 body.bg-semi {
-  background-image: url(../img/semi_bg.png);
+  background-image: url(../img/semi_bg.jpg);
   background-size: cover;
   background-position: left center;
 }
@@ -488,6 +488,14 @@ ul {
   margin: 0;
   -webkit-transform: translateY(30%);
           transform: translateY(30%);
+}
+
+.title-second.white {
+  color: #fff;
+}
+
+.title-second.white .en::after {
+  background-color: #fff;
 }
 
 @media screen and (min-width: 2500px) {
@@ -2611,7 +2619,7 @@ ul {
 
 .future-inner.uni .future-inner_pic {
   width: 66%;
-  top: 7vw;
+  top: 5vw;
   right: 3.73vw;
 }
 
@@ -3184,6 +3192,11 @@ ul {
   width: 100%;
 }
 
+.life_map_item .map-element {
+  position: absolute;
+  cursor: pointer;
+}
+
 .life_map_item#traffic {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -3197,11 +3210,9 @@ ul {
 }
 
 .life_map_item#traffic .bus {
-  position: absolute;
   width: 16.39%;
   top: 55%;
   left: 33.5%;
-  cursor: pointer;
 }
 
 .life_map_item#life {
@@ -3211,35 +3222,27 @@ ul {
 }
 
 .life_map_item#life .shop-1 {
-  position: absolute;
   width: 24.4%;
   top: 18%;
   right: 14%;
-  cursor: pointer;
 }
 
 .life_map_item#life .shop-2 {
-  position: absolute;
   width: 13.7%;
   top: 51.4%;
   right: 46.6%;
-  cursor: pointer;
 }
 
 .life_map_item#life .shop-3 {
-  position: absolute;
   width: 13.7%;
   top: 53%;
   right: 23%;
-  cursor: pointer;
 }
 
 .life_map_item#life .shop-4 {
-  position: absolute;
   width: 15.5%;
   top: 63.6%;
   right: 15.3%;
-  cursor: pointer;
 }
 
 .life_map_item#school {
@@ -3255,19 +3258,15 @@ ul {
 }
 
 .life_map_item#school .school-1 {
-  position: absolute;
   width: 4.6%;
   top: 49%;
   right: 46.2%;
-  cursor: pointer;
 }
 
 .life_map_item#school .school-2 {
-  position: absolute;
   width: 4.6%;
   top: 54.5%;
   right: 46.2%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure {
@@ -3283,133 +3282,105 @@ ul {
 }
 
 .life_map_item#leisure .forest {
-  position: absolute;
   width: 16.2%;
   top: 48.5%;
   left: 1.2%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .ecopark {
-  position: absolute;
   width: 13%;
   top: 32%;
   left: 27.1%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .park-1 {
-  position: absolute;
   width: 5.1%;
   top: 22.9%;
   right: 37.2%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .park-2 {
-  position: absolute;
   width: 5.1%;
   top: 28.5%;
   right: 37.2%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .Xpark {
-  position: absolute;
   width: 3.2%;
   top: 26.4%;
   right: 32%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .shinkong {
-  position: absolute;
   width: 3.2%;
   top: 31%;
   right: 32%;
-  cursor: pointer;
-  display: none;
 }
 
 .life_map_item#leisure .gloria {
-  position: absolute;
   width: 4%;
   top: 35.3%;
   right: 31.3%;
-  cursor: pointer;
-  display: none;
 }
 
 .life_map_item#leisure .park-3 {
-  position: absolute;
   width: 5.2%;
   top: 18.2%;
   right: 30.1%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .park-4 {
-  position: absolute;
   width: 5.1%;
   top: 20%;
   right: 12%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .ikea {
-  position: absolute;
   width: 5.8%;
   top: 24.7%;
   right: 18%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .park-5 {
-  position: absolute;
   width: 4.9%;
   top: 42.5%;
   right: 27.5%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .court {
-  position: absolute;
   width: 3%;
   top: 53.5%;
   right: 29%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .pool {
-  position: absolute;
   width: 5.5%;
   top: 53.5%;
   right: 44.6%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .drama {
-  position: absolute;
   width: 5.5%;
   top: 16.2%;
   right: 29.6%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .cozzl {
-  position: absolute;
   width: 5%;
   top: 23.5%;
   right: 30.6%;
-  cursor: pointer;
 }
 
 .life_map_item#leisure .global {
-  position: absolute;
   width: 3.5%;
   top: 45.4%;
   right: 28.3%;
-  cursor: pointer;
+}
+
+.life_map_item#leisure .costco {
+  width: 6.5%;
+  top: 72.4%;
+  right: 38%;
 }
 
 .life_map_item.active {
@@ -4432,6 +4403,16 @@ ul {
   letter-spacing: 0.05em;
 }
 
+.structure_main_text h3 .remark {
+  font-size: 30px;
+}
+
+.structure_main_text h4 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
 .structure_main_text p {
   font-size: 20px;
   letter-spacing: 0.05em;
@@ -4445,12 +4426,64 @@ ul {
   padding-left: 5.37vw;
 }
 
-.structure_main_pic > img {
+.structure_main_pic img {
   width: 100%;
+}
+
+.structure_main_line {
+  width: 100%;
+  height: 1px;
+  background-color: #595959;
+  position: relative;
+  margin: 1.82vw 0;
+}
+
+.structure_main_line::after {
+  position: absolute;
+  content: "VS.";
+  font-size: 48px;
+  font-weight: 700;
+  color: #595959;
+  top: 50%;
+  left: calc(100% + 20px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .structure_main.angle .structure_main_text {
   padding-bottom: 3vw;
+}
+
+.structure_main.concrete .structure_main_pic {
+  padding-right: 6.96vw;
+}
+
+.structure_main.pound .structure_main_pic {
+  width: 65%;
+}
+
+.structure_main.pound .structure_main_text {
+  width: 35%;
+  padding-left: 3.74vw;
+}
+
+.structure_main.pound .structure_main_text > img {
+  width: 100%;
+  margin-top: 86px;
+}
+
+.structure_main.one {
+  padding: 0 11.66vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.structure_main.one .structure_main_pic .realpic {
+  width: 52% !important;
+}
+
+.structure_main.one .structure_main_pic .line {
+  width: 48% !important;
 }
 
 .structure_real h3 {
@@ -4465,7 +4498,7 @@ ul {
 }
 
 .structure_real .row {
-  width: 70%;
+  width: 85%;
   margin-top: 4vw;
   padding-left: 6.5vw;
   margin-left: 0.5vw;
@@ -4475,6 +4508,7 @@ ul {
 .structure_real .row > div {
   padding-left: 0.5vw;
   padding-right: 0.5vw;
+  width: 20%;
 }
 
 .structure_real_item {
@@ -5309,6 +5343,10 @@ ul {
   width: 100%;
 }
 
+.material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-item img {
+  width: 100%;
+}
+
 .material_inner.semi .material_inner_side_hide_inner .semi-slider .semi-swiper_prev, .material_inner.semi .material_inner_side_hide_inner .semi-slider .semi-swiper_next {
   position: absolute;
   width: 5%;
@@ -5323,6 +5361,27 @@ ul {
 }
 
 .material_inner.semi .material_inner_side_hide_inner .semi-slider .semi-swiper_next {
+  right: -8%;
+}
+
+.material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-control-prev, .material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-control-next {
+  position: absolute;
+  width: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-control-prev > img, .material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-control-next > img {
+  width: 100%;
+}
+
+.material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-control-prev {
+  left: -8%;
+}
+
+.material_inner.semi .material_inner_side_hide_inner .semi-slider .carousel-control-next {
   right: -8%;
 }
 
@@ -5926,7 +5985,7 @@ ul {
   padding: 5px 20px;
   border-radius: 100px;
   border: 1px solid #000;
-  display: block;
+  display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -5945,6 +6004,10 @@ ul {
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
   display: inline-block;
+}
+
+.waterproof_list li > span:nth-child(2) {
+  margin-left: 20px;
 }
 
 .waterproof_list li .remark {

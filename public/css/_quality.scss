@@ -163,6 +163,14 @@
                 font-weight: 600;
                 margin-bottom: 25px;
                 letter-spacing: 0.05em;
+                .remark {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 15px;
+                font-weight: 300;
+                margin-bottom: 45px;
             }
             p {
                 font-size: 20px;
@@ -175,13 +183,65 @@
         &_pic {
             width: 50%;
             padding-left: 5.37vw;
-            >img {
+            img {
                 width: 100%;
+            }
+        }
+        &_line {
+            width: 100%;
+            height: 1px;
+            background-color: #595959;
+            position: relative;
+            margin: 1.82vw 0;
+            &::after {
+                position: absolute;
+                content: "VS.";
+                font-size: 48px;
+                font-weight: 700;
+                color: #595959;
+                top: 50%;
+                left: calc(100% + 20px);
+                transform: translateY(-50%);
             }
         }
         &.angle {
             .structure_main_text {
                 padding-bottom: 3vw;
+            }
+        }
+        &.concrete {
+            .structure_main_pic {
+                // padding-left: 0;
+                padding-right: 6.96vw;
+            }
+        }
+        &.pound {
+            .structure_main {
+                &_pic {
+                    width: 65%;
+                }
+                &_text {
+                    width: 35%;
+                    padding-left: 3.74vw;
+                    >img {
+                        width: 100%;
+                        margin-top: 86px;
+                    }
+                }
+            }
+        }
+        &.one {
+            padding: 0 11.66vw;
+            flex-wrap: wrap;
+            .structure_main {
+                &_pic {
+                    .realpic {
+                        width: 52% !important;
+                    }
+                    .line {
+                        width: 48% !important;
+                    }
+                }
             }
         }
     }
@@ -196,7 +256,7 @@
             transform: translateX(-50%);
         }
         .row {
-            width: 70%;
+            width: 85%;
             margin-top: 4vw;
             padding-left: 6.5vw;
             margin-left: 0.5vw;
@@ -204,6 +264,7 @@
             >div {
                 padding-left: 0.5vw;
                 padding-right: 0.5vw;
+                width: 20%;
             }
         }
         &_item {
@@ -968,6 +1029,11 @@
                                         width: 100%;
                                     }
                                 }
+                                .carousel-item {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
                                 .semi-swiper_prev, .semi-swiper_next {
                                     position: absolute;
                                     width: 5%;
@@ -979,6 +1045,22 @@
                                     left: -8%;
                                 }
                                 .semi-swiper_next {
+                                    right: -8%;
+                                }
+                                .carousel-control-prev, .carousel-control-next {
+                                    position: absolute;
+                                    width: 5%;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    cursor: pointer;
+                                    >img {
+                                        width: 100%;
+                                    }
+                                }
+                                .carousel-control-prev {
+                                    left: -8%;
+                                }
+                                .carousel-control-next {
                                     right: -8%;
                                 }
                             }
@@ -1599,7 +1681,7 @@
                 padding: 5px 20px;
                 border-radius: 100px;
                 border: 1px solid #000;
-                display: block;
+                display: inline-block;
                 width: fit-content;
                 cursor: pointer;
                 transition: $transition;
@@ -1611,6 +1693,9 @@
                     font-weight: 600;
                     transform: translateY(-10%);
                     display: inline-block;
+                }
+                &:nth-child(2) {
+                    margin-left: 20px;
                 }
             }
             .remark {

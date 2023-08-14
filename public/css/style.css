@@ -1902,7 +1902,7 @@ ul {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 4vw);
   overflow: hidden;
 }
 
@@ -3724,6 +3724,10 @@ ul {
   border-color: #0093B4;
 }
 
+.plan_nav_space .plan_nav_second {
+  display: block;
+}
+
 @media screen and (min-width: 2500px) {
   .plan_nav_first > li.plan_nav_life .plan_nav_second ul {
     padding-left: 70px;
@@ -4096,7 +4100,7 @@ ul {
   position: absolute;
 }
 
-.plan_real_pic_item > img, .plan_real_pic_item > video, .plan_real_pic_item #realVideo {
+.plan_real_pic_item > video, .plan_real_pic_item #realVideo, .plan_real_pic_item .plan_real_pic_big {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -4120,6 +4124,28 @@ ul {
 
 .plan_real_pic_item#plan_real_pic_static {
   display: block;
+}
+
+.plan_real_pic_area {
+  position: absolute;
+}
+
+.plan_real_pic_area.area-a {
+  width: 15%;
+  top: 46.5%;
+  left: 39%;
+}
+
+.plan_real_pic_area.area-b {
+  width: 11%;
+  top: 46%;
+  left: 52.74%;
+}
+
+.plan_real_pic_area.area-found {
+  width: 13.54%;
+  top: 54.78%;
+  left: 55.99%;
 }
 
 .plan_life_pic {

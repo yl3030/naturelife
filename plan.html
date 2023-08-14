@@ -68,16 +68,12 @@
     </nav>
 
     <div>
-        <div class="plan_item plan_building active" id="plan_building">
+        <div class="plan_item plan_building" id="plan_building">
             <div class="plan_building_main">
                 <div class="plan_building_main_pic active bottom" id="building-1" style="background-image: url(./public/img/plan-building-1.jpg);"></div>
                 <div class="plan_building_main_pic" id="building-2" style="background-image: url(./public/img/plan-building-2.webp);"></div>
                 <div class="plan_building_main_pic" id="building-3" style="background-image: url(./public/img/plan-building-3.webp);"></div>
                 <div class="plan_building_main_pic" id="building-4" style="background-image: url(./public/img/plan-building-4.jpg); background-size: contain;"></div>
-                <!-- <img id="building-1" class="active" src="./public/img/plan-building-1.webp" alt="">
-                <img id="building-2" src="./public/img/plan-building-2.webp" alt="">
-                <img id="building-3" src="./public/img/plan-building-3.webp" alt="">
-                <img id="building-4" src="./public/img/plan-building-4.webp" alt=""> -->
                 <p>3D示意圖</p>
             </div>
             <div class="plan_building_smallpic">
@@ -88,9 +84,9 @@
             </div>
         </div>
 
-        <div class="plan_item plan_space" id="plan_space">
+        <div class="plan_item plan_space active" id="plan_space">
             <div class="plan_space_item plan_item_inner active" id="all">
-                <div class="plan_title">
+                <div class="plan_title active">
                     <h2>1樓全區平面圖</h2>
                     <h3>本圖僅供參考，實際依買賣契約書為準</h3>
                 </div>
@@ -117,11 +113,13 @@
                     </div>
                     <div class="plan_real_pic">
                         <div class="plan_real_pic_item" id="plan_real_pic_static">
-                            <img src="./public/img/space-real.jpg" alt="">
+                            <img class="plan_real_pic_big" src="./public/img/space-real.png" alt="">
+                            <img class="plan_real_pic_area area-a" src="./public/img/space-real-a.png" alt="">
+                            <img class="plan_real_pic_area area-b" src="./public/img/space-real-b.png" alt="">
+                            <img class="plan_real_pic_area area-found" src="./public/img/space-real-found.png" alt="">
                         </div>
                         <div class="plan_real_pic_item" id="plan_real_pic_video">
                             <div id="realVideo"></div>
-                            <!-- <video id="realVideo" src="./public/video/360degree.webm" muted></video> -->
                         </div>
                     </div>
                 </div>
@@ -311,6 +309,11 @@
         <img src="./public/img/b7_popup.png" alt="">
     </div>
 
+    <div class="plan-popup" id="plan-popup-real">
+        <div class="plan-popup_bg"></div>
+        <img src="./public/img/space-real-popup.png" alt="">
+    </div>
+
 
     
 
@@ -318,13 +321,13 @@
         <nav class="plan_nav">
             <ul class="plan_nav_first">
                 <li data-aos="fade-left" data-aos-duration="800">
-                    <div class="plan_nav_title active" data-target="#plan_building">
+                    <div class="plan_nav_title" data-target="#plan_building">
                         <h2 class="plan_nav_title_big">外觀</h2>
                         <h3 class="plan_nav_title_small">建<br>築</h3>
                     </div>
                 </li>
                 <li class="plan_nav_space" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-                    <div class="plan_nav_title" data-target="#plan_space">
+                    <div class="plan_nav_title active" data-target="#plan_space">
                         <h2 class="plan_nav_title_big">空間</h2>
                         <h3 class="plan_nav_title_small">規<br>劃</h3>
                     </div>

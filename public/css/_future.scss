@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    height: calc(100vh - 4vw);
     overflow: hidden;
     &_bg {
         position: absolute;
@@ -483,6 +484,7 @@
         stroke-dashoffset: 0;
     }
 }
+
 
 @keyframes fadeup {
     from {

@@ -94,6 +94,11 @@
             }
         }
     }
+    &_space {
+        .plan_nav_second {
+            display: block;
+        }
+    }
     @media screen and (min-width: 2500px) {
         &_first {
             >li {
@@ -442,7 +447,6 @@
     padding-left: 7vw;
     padding-right: 15vw;
     padding-top: 4vw;
-    // padding-bottom: 7.1vw;
     &_btn {
         width: 27%;
         &_main {
@@ -481,7 +485,7 @@
             background-color: #606060;
             display: none;
             position: absolute;
-            >img, >video, #realVideo {
+            >video, #realVideo, .plan_real_pic_big {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -502,9 +506,24 @@
             &#plan_real_pic_static {
                 display: block;
             }
-            // &.active {
-            //     display: block;
-            // }
+        }
+        &_area {
+            position: absolute;
+            &.area-a {
+                width: 15%;
+                top: 46.5%;
+                left: 39%;
+            }
+            &.area-b {
+                width: 11%;
+                top: 46%;
+                left: 52.74%;
+            }
+            &.area-found {
+                width: 13.54%;
+                top: 54.78%;
+                left: 55.99%;
+            }
         }
     }
 }

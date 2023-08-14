@@ -85,6 +85,10 @@ $(".plan_real_btn_main").click(function(){
     }
 })
 
+$(".plan_real_pic_area").click(function(){
+    $("#plan-popup-real").fadeIn(300);
+})
+
 $(".plan-popup_bg").click(function(){
     $(this).parents(".plan-popup").fadeOut(300);
 })

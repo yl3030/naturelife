@@ -125,11 +125,17 @@
     <script>
         var swiper = new Swiper(".popup-a18_swiper", {
             slidesPerView: 1,
-            loop: true,
+            loop: true,        
+            observeParents:true,
+            observer:true,
             navigation: {
                 nextEl: ".popup-future_swiper-next",
                 prevEl: ".popup-future_swiper-prev",
             },
+        })
+
+        $(".popup-future_swiper-arrow").click(function(){
+            console.log("arrow click!!");
         })
     </script>
 </body>

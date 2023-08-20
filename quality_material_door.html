@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <title>青森活</title>
 </head>
@@ -90,7 +91,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="material_inner_main_item nopopup" data-popup="#doorPopup-3">
+                    <div class="material_inner_main_item" data-popup="#doorPopup-3">
                         <img src="./public/img/door-3.png" alt="">
                         <p>氣密窗</p>
                     </div>
@@ -182,25 +183,42 @@
         <div class="material-popup_content">
             <div class="material-popup_content_border">
                 <div class="material-popup_content_inner">
-                    <img id="doorPopup-1" src="./public/img/door-popup-1.png" alt="">
-                    <img id="doorPopup-2" src="./public/img/door-popup-2.png" alt="">
-                    <!-- <img id="doorPopup-3" src="./public/img/door-popup-3.png" alt=""> -->
+                    <img id="doorPopup-1" class="material-popup_inner" src="./public/img/door-popup-1.png" alt="">
+                    <img id="doorPopup-2" class="material-popup_inner" src="./public/img/door-popup-2.png" alt="">
+                    <div class="material-popup_slider material-popup_inner" id="doorPopup-3">
+                        <div class="swiper-container doorPopup-3_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/img/door-popup-3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./public/img/door-popup-4.png" alt=""></div>
+                            </div>     
+                        </div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-next"><img src="./public/img/arrow-next-2.png" alt=""></div>
+                        <div class="material-popup_slider_arrow material-popup_slider_arrow-prev"><img src="./public/img/arrow-prev-2.png" alt=""></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
-
-    
-
-
-
-    
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/common.js"></script>
+
+    <script>
+        var swiper_popup_1 = new Swiper(".doorPopup-3_swiper", {
+            slidesPerView: 1,
+            observeParents:true,
+            observer:true,  
+            navigation: {
+                nextEl: ".material-popup_slider_arrow-next",
+                prevEl: ".material-popup_slider_arrow-prev",
+            },
+            loop: true, 
+            speed: 800,
+        })
+    </script>
 </body>
 </html>

@@ -275,6 +275,15 @@
                 font-size: 21px;
                 font-weight: 600;
                 margin: 0;
+                span {
+                    color: #e53535;
+                    margin-left: 10px;
+                    transition: $transition;
+                    cursor: pointer;
+                    &:hover {
+                        color: #8c0617;
+                    }
+                }
             }
             &.joint {
                 .structure_real_pic {
@@ -283,6 +292,17 @@
                     background-repeat: no-repeat;
                 }
             }
+            // &.videoPopup {
+            //     cursor: pointer;
+            //     h4 {
+            //         transition: $transition;
+            //     }
+            //     &:hover {
+            //         h4 {
+            //             color: #8c0617;
+            //         }
+            //     }
+            // }
         }
         &_pic {
             width: 100%;
@@ -863,8 +883,6 @@
                         padding-right: 0;
                     }
                 }
-                &_side {
-                }
             }
         }
         &.solar {
@@ -996,7 +1014,6 @@
                 &_logo {
                     width: 15.06vw;
                     right: 3.14vw;
-                    // transform: translateX(-6%);
                 }
                 &_side {
                     &_content {
@@ -1275,6 +1292,41 @@
                 }
                 img {
                     width: 100%;
+                }
+            }
+        }
+        &.panasonic {
+            .material_inner {
+                &_logo {
+                    >img {
+                        width: 15.75vw;
+                        margin: 0;
+                    }
+                }
+            }
+            .side-pic {
+                width: 13.52vw;
+                display: block;
+                margin: 0 auto 2vw;
+            }
+            &.sideContent {
+                .material_inner_side_content {
+                    margin-top: 0;
+                }
+            }
+            .panasonic_content {
+                display: flex;
+                align-items: center;
+                // width: 90%;
+                img {
+                    width: 100%;
+                }
+                &_1 {
+                    width: 25vw;
+                    margin-right: 2vw;
+                }
+                &_2 {
+                    width: 33vw;
                 }
             }
         }

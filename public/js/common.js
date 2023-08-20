@@ -21,6 +21,10 @@ $(".popup").click(function(){
     }
 })
 
+$(".structure_real_item .videoPopup").click(function(){
+    $(".popup").fadeIn(300).css("display","flex");
+})
+
 $(".plan_nav_title").click(function(){
     $(this).addClass("active");
     $(this).parents("li").find(".plan_nav_second").slideDown(200);
@@ -109,7 +113,34 @@ $(".plan_life_map_item").click(function(){
     let glasses = $(map).data("glasses");
     $(".plan_life_glasses").fadeOut(300);
     $(glasses).fadeIn(300);
+
+    let li = $(this).data("li");
+    $(li).addClass("active").siblings("li").removeClass("active");
 })
+
+$(".plan_space_item .plan_life_map_item").click(function(){
+    $(".plan_space").removeClass("active");
+    $(this).parents(".plan_space_item").find(".plan_title").removeClass("active");
+    $(".plan_life").addClass("active");
+    $(".plan_nav_space").find(".plan_nav_title").removeClass("active");
+    $(".plan_nav_space").find(".plan_nav_second").slideUp(300);
+    $(".plan_nav_life").find(".plan_nav_title").addClass("active");
+    $(".plan_nav_life").find(".plan_nav_second").slideDown(300);
+
+    $("#plan_life_map").fadeIn(300);
+    let target = $(this).data("target");
+    $("#plan_life_map").find(target).addClass("active");
+    $(target).siblings(".plan_life_map_item").removeClass("active");
+})
+
+// $("#plan-popup-real .plan-popup_bg").click(function(){
+//     $(".plan_space_item#real").removeClass("active");
+//     $(".plan_space_item#real").find(".plan_title").removeClass("active");
+//     $(".plan_space_item#standard").addClass("active");
+//     $(".plan_space_item#standard").find(".plan_title").addClass("active");
+//     $(".plan_nav_space .plan_nav_second li").removeClass("active");
+//     $(".plan_nav_second_standard").addClass("active");
+// })
 
 $(".material_inner_logo.sideContent").click(function(){
     $(this).parents(".material_inner_side").toggleClass("active");
@@ -120,7 +151,7 @@ $(".material_inner_main_item").click(function(){
     if(!$(this).hasClass("nopopup")) {
         let popup = $(this).data("popup");
         $(".material-popup").fadeIn(300).css("display","flex");
-        $(popup).addClass("active").siblings("img").removeClass("active");
+        $(popup).addClass("active").siblings(".material-popup_inner").removeClass("active");
     }
 })
 
@@ -131,10 +162,6 @@ $(".semi-list").click(function(){
         $(popup).addClass("active").siblings(".material-popup_slider").removeClass("active");
     }
 })
-
-// $(".material-popup").click(function(){
-//     $(this).fadeOut(300);
-// })
 
 $(".material-popup").click(function (event) {
     var arrow = $(".material-popup_slider_arrow");

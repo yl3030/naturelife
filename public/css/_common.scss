@@ -25,6 +25,11 @@ body {
         background-size: cover;
         background-position: left center;
     }
+    &.bg-panasonic {
+        background-image: url(../img/panasonic_bg.png);
+        background-size: cover;
+        background-position: left center;
+    }
 }
 
 

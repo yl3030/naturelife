@@ -1,7 +1,7 @@
 .future {
     background-image: url(../img/future_bg.png);
     background-size: cover;
-    background-position: center;
+    background-position: center 90%;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
@@ -23,7 +23,7 @@
         animation-delay: 1s;
         opacity: 0;
         &.museum {
-            top: 39%;
+            top: 34%;
             left: 38.7%;
             .future_place_line {
                 height: 3vw;
@@ -38,7 +38,7 @@
             }
         }
         &.uni {
-            top: 40%;
+            top: 35%;
             left: 42%;
             .future_place_line {
                 height: 3vw;
@@ -51,7 +51,7 @@
             }
         }
         &.asian {
-            top: 52%;
+            top: 45.5%;
             left: 45.5%;
             .future_place_line {
                 height: 11vw;
@@ -66,10 +66,10 @@
             }
         }
         &.center {
-            top: 46%;
+            top: 41%;
             left: 53%;
             .future_place_line {
-                height: 6.24vw;
+                height: 7vw;
                 transform: rotate(35deg);
                 transform-origin: bottom;
                 bottom: 40%;
@@ -83,10 +83,10 @@
             }
         }
         &.hotel {
-            top: 46%;
+            top: 41%;
             left: 56.5%;
             .future_place_line {
-                height: 6.24vw;
+                height: 7vw;
                 transform: rotate(35deg);
                 transform-origin: bottom;
                 bottom: 40%;
@@ -198,7 +198,7 @@
                 animation: dash 1s linear forwards;
                 stroke-dasharray: 2000px;
                 stroke-dashoffset: 2000px;
-                top: 35%;
+                top: 27%;
                 left: 0;
             }
             &-red {
@@ -209,13 +209,13 @@
                 &_path {
                     stroke-dasharray: 10px;
                 }
-                top: 26%;
+                top: 16%;
                 right: -3%;
             }
             &-chongcheng {
                 width: 77.92%;
                 left: 23%;
-                top: 55%;
+                top: 48%;
                 stroke-dasharray: 1600px;
                 stroke-dashoffset: 1600px;
                 animation: dash 1s linear forwards;
@@ -223,7 +223,7 @@
             &-neistu {
                 width: 24.08%;
                 left: 39%;
-                top: 90%;
+                top: 88%;
                 // filter: none;
                 stroke-dasharray: 500px;
                 stroke-dashoffset: 500px;
@@ -232,7 +232,7 @@
             &-yueamei {
                 width: 60.73%;
                 left: 0;
-                top: 54.5%;
+                top: 47.5%;
                 // filter: none;
                 stroke-dasharray: 1200px;
                 stroke-dashoffset: 1200px;
@@ -241,14 +241,14 @@
             &-highspeed {
                 width: 75%;
                 left: 26%;
-                top: 23%;
+                top: 16%;
                 animation: fadeup 1s ease-in-out forwards;
                 animation-delay: 0.65s;
                 opacity: 0;
             }
             &-highway {
                 width: 81.31%;
-                left: 35%;
+                left: 28%;
                 top: 21%;
                 animation: fadeup 1s ease-in-out forwards;
                 animation-delay: 0.85s;
@@ -263,12 +263,12 @@
         animation-delay: 0.85s;
         &-big {
             width: 46vw;
-            top: 27%;
+            top: 20%;
             left: 22%;
         }
         &-small {
             width: 17.5vw;
-            top: 45.5%;
+            top: 38.5%;
             left: 36%;
         }
     }
@@ -311,7 +311,7 @@
     .a18 {
         position: absolute;
         width: 6vw;
-        top: 35.3%;
+        top: 28.3%;
         left: 36.7%;
         animation: fadeup 0.5s ease-in-out forwards;
         animation-delay: 1s;
@@ -320,7 +320,7 @@
     .a19 {
         position: absolute;
         width: 6vw;
-        top: 40%;
+        top: 33%;
         left: 43%;
         animation: fadeup 0.5s ease-in-out forwards;
         animation-delay: 1s;

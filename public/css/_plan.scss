@@ -425,9 +425,6 @@
         opacity: 1;
         visibility: visible;
         z-index: 4;
-        &.plan_space, &.plan_life {
-            // z-index: 6;
-        }
     }
 }
 
@@ -553,9 +550,9 @@
         left: 36vw;
     }
     &_b3b4 {
-        width: 75vw;
-        top: 4vw;
-        left: 8vw;
+        // width: 75vw;
+        // top: 4vw;
+        // left: 8vw;
     }
     &_glasses {
         width: 8.21vw;
@@ -629,5 +626,44 @@
         left: 50%;
         transform: translate(-50%, -50%);
         // box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+}
+
+.b3b4 {
+    width: 75vw;
+    top: 4vw;
+    left: 8vw;
+    position: absolute;
+    .plan_life_b3b4 {
+        width: 100%;
+        position: static;
+    }
+    &_room {
+        position: absolute;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &_b1 {
+        width: 16.83%;
+        left: 0;
+        top: 32.7%;
+    }
+    &_b3 {
+        width: 17.5%;
+        left: 33.1%;
+        top: 62.4%;
+    }
+    &_b7 {
+        width: 15.91%;
+        left: 84.1%;
+        top: 31.6%;
+    }
+    &_b11 {
+        width: 14.3%;
+        left: 37.2%;
+        top: 19.8%;
     }
 }

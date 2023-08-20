@@ -129,13 +129,12 @@
                     <div class="structure_real_pic">
                         <img src="./public/img/buildingPic-9.png" alt="">
                     </div>
-                    <h4>固定洩水坡度</h4>
+                    <h4>固定洩水坡度<span class="videoPopup">影片</span></h4>
                 </div>
             </div>
             <div class="col-3">
                 <div class="structure_real_item joint">
                     <div class="structure_real_pic" style="background-image: url(./public/img/buildingPic-10.jpg);">
-                        <!-- <img src="./public/img/buildingPic-10.jpg" alt=""> -->
                     </div>
                     <h4>牛角形接管<br>設於1樓利於排水</h4>
                 </div>
@@ -159,28 +158,11 @@
         </div>
     </div>
 
-    <!-- <nav class="structure_nav">
-        <ul>
-            <li class="picture">
-                <a href="./quality_method_structure_picture.html">
-                    <img class="structure_nav_bgBlue" src="./public/img/bg-blue-round.png" alt="">
-                    <span>工法圖</span>
-                </a>
-            </li>
-            <li class="real">
-                <a class="active">
-                    <img class="structure_nav_bgBlue" src="./public/img/bg-blue-round.png" alt="">
-                    <span>施工實景</span>
-                </a>
-            </li>
-        </ul>
-    </nav> -->
     <nav class="plan_nav">
         <ul class="plan_nav_first">
             <li data-aos="fade-left" data-aos-duration="800">
                 <a href="./quality_method_structure_picture.html" class="plan_nav_title">
                     <h2 class="plan_nav_title_big">工法圖</h2>
-                    <!-- <h3 class="plan_nav_title_small">建<br>築</h3> -->
                 </a>
             </li>
             <li data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
@@ -192,15 +174,61 @@
         </ul>
     </nav>
 
+    <div class="popup">
+        <div class="popup_bg" onclick="stop()"></div>
+        <div class="popup_main">
+            <div class="popup_main_pic">
+                <div id="realVideo" class="popup_main_video"></div>
+            </div>
+            <img class="tree-1" src="./public/img/tree-1.png" alt="">
+            <img class="tree-2" src="./public/img/tree-2.png" alt="">
+        </div>
+    </div>
 
-
-    
-
-    
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/common.js"></script>
+
+    <script>
+        // youtube
+        var tag = document.createElement("script");
+
+       tag.src = "https://www.youtube.com/iframe_api";
+       var firstScriptTag = document.getElementsByTagName("script")[0];
+       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+       var done = false;
+       function onPlayerStateChange(event) {
+           if (event.data == YT.PlayerState.PLAYING && !done) {
+               setTimeout(stopVideo, 6000);
+               done = true;
+           }
+       }
+       function stopVideo() {
+           player.stopVideo();
+       }
+
+       var videoDegree;
+
+       function onYouTubeIframeAPIReady() {
+           videoDegree = new YT.Player("realVideo", {
+               videoId: 'OA7T57eWWmI',
+               events: {
+                   onReady: stopVideo,
+               },
+           });
+       }
+
+       function stop() {
+           videoDegree.stopVideo();
+       }
+
+       function onPlayer(event) {
+           event.target.playVideo();
+       }
+   </script>
+
 </body>
 </html>

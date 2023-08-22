@@ -155,6 +155,10 @@ $(".material_inner_main_item").click(function(){
     }
 })
 
+$(".material_inner.panasonic .side-pic").click(function(){
+    $(".material-popup").fadeIn(300).css("display","flex");
+})
+
 $(".semi-list").click(function(){
     if(!$(this).hasClass("nopopup")) {
         let popup = $(this).data("popup");

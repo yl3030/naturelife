@@ -1303,11 +1303,19 @@
                         margin: 0;
                     }
                 }
+                &_main {
+                    margin-top: 0;
+                }
             }
             .side-pic {
                 width: 13.52vw;
                 display: block;
                 margin: 0 auto 2vw;
+                cursor: pointer;
+                transition: $transition;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
             &.sideContent {
                 .material_inner_side_content {
@@ -1322,11 +1330,11 @@
                     width: 100%;
                 }
                 &_1 {
-                    width: 25vw;
+                    width: 22vw;
                     margin-right: 2vw;
                 }
                 &_2 {
-                    width: 33vw;
+                    width: 32vw;
                 }
             }
         }

@@ -619,13 +619,34 @@
         background-color: rgba(236, 236, 236, 0.9);
         cursor: pointer;
     }
-    img {
+    // img {
+    //     position: absolute;
+    //     width: 78.37vw;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+    &_inner {
         position: absolute;
         width: 78.37vw;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        // box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+        .real_bg {
+            width: 100%;
+        }
+        .real_house {
+            position: absolute;
+            width: 43%;
+            top: 43%;
+            right: 6%;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 }
 

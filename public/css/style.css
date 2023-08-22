@@ -2163,12 +2163,12 @@ ul {
           animation: dash 1s linear forwards;
   stroke-dasharray: 2000px;
   stroke-dashoffset: 2000px;
-  top: 27%;
+  top: 20%;
   left: 0;
 }
 
 .future_line.line-red {
-  width: 75%;
+  width: 71%;
   -webkit-animation: dash 1s linear forwards;
           animation: dash 1s linear forwards;
   stroke-dasharray: 1700px;
@@ -2182,9 +2182,9 @@ ul {
 }
 
 .future_line.line-chongcheng {
-  width: 77.92%;
+  width: 79%;
   left: 23%;
-  top: 48%;
+  top: 44%;
   stroke-dasharray: 1600px;
   stroke-dashoffset: 1600px;
   -webkit-animation: dash 1s linear forwards;
@@ -2192,9 +2192,9 @@ ul {
 }
 
 .future_line.line-neistu {
-  width: 24.08%;
-  left: 39%;
-  top: 88%;
+  width: 20.08%;
+  left: 44%;
+  top: 84%;
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
   -webkit-animation: dash 0.33s linear forwards;
@@ -2204,7 +2204,7 @@ ul {
 .future_line.line-yueamei {
   width: 60.73%;
   left: 0;
-  top: 47.5%;
+  top: 43.5%;
   stroke-dasharray: 1200px;
   stroke-dashoffset: 1200px;
   -webkit-animation: dash 0.65s linear forwards;
@@ -2214,7 +2214,7 @@ ul {
 .future_line.line-highspeed {
   width: 75%;
   left: 26%;
-  top: 16%;
+  top: 7%;
   -webkit-animation: fadeup 1s ease-in-out forwards;
           animation: fadeup 1s ease-in-out forwards;
   -webkit-animation-delay: 0.65s;
@@ -2225,7 +2225,7 @@ ul {
 .future_line.line-highway {
   width: 81.31%;
   left: 28%;
-  top: 21%;
+  top: 3%;
   -webkit-animation: fadeup 1s ease-in-out forwards;
           animation: fadeup 1s ease-in-out forwards;
   -webkit-animation-delay: 0.85s;
@@ -2260,7 +2260,7 @@ ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 0;
+  top: -15%;
   left: 0;
   -webkit-animation: fadeup 0.5s ease-in-out forwards;
           animation: fadeup 0.5s ease-in-out forwards;
@@ -4261,13 +4261,34 @@ ul {
   cursor: pointer;
 }
 
-.plan-popup img {
+.plan-popup_inner {
   position: absolute;
   width: 78.37vw;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.plan-popup_inner .real_bg {
+  width: 100%;
+}
+
+.plan-popup_inner .real_house {
+  position: absolute;
+  width: 43%;
+  top: 43%;
+  right: 6%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.plan-popup_inner .real_house:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .b3b4 {
@@ -5778,10 +5799,22 @@ ul {
   margin: 0;
 }
 
+.material_inner.panasonic .material_inner_main {
+  margin-top: 0;
+}
+
 .material_inner.panasonic .side-pic {
   width: 13.52vw;
   display: block;
   margin: 0 auto 2vw;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.material_inner.panasonic .side-pic:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .material_inner.panasonic.sideContent .material_inner_side_content {
@@ -5802,12 +5835,12 @@ ul {
 }
 
 .material_inner.panasonic .panasonic_content_1 {
-  width: 25vw;
+  width: 22vw;
   margin-right: 2vw;
 }
 
 .material_inner.panasonic .panasonic_content_2 {
-  width: 33vw;
+  width: 32vw;
 }
 
 @media screen and (min-width: 2500px) {

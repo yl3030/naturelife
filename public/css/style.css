@@ -2090,7 +2090,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 2.9vw;
+  bottom: 2.9vw;
   right: 5.34vw;
 }
 

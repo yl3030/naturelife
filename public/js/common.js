@@ -133,14 +133,15 @@ $(".plan_space_item .plan_life_map_item").click(function(){
     $(target).siblings(".plan_life_map_item").removeClass("active");
 })
 
-// $("#plan-popup-real .plan-popup_bg").click(function(){
-//     $(".plan_space_item#real").removeClass("active");
-//     $(".plan_space_item#real").find(".plan_title").removeClass("active");
-//     $(".plan_space_item#standard").addClass("active");
-//     $(".plan_space_item#standard").find(".plan_title").addClass("active");
-//     $(".plan_nav_space .plan_nav_second li").removeClass("active");
-//     $(".plan_nav_second_standard").addClass("active");
-// })
+$("#plan-popup-real .real_house").click(function(){
+    $(".plan_space_item#real").removeClass("active");
+    $(".plan_space_item#real").find(".plan_title").removeClass("active");
+    $(".plan_space_item#standard").addClass("active");
+    $(".plan_space_item#standard").find(".plan_title").addClass("active");
+    $(".plan_nav_space .plan_nav_second li").removeClass("active");
+    $(".plan_nav_second_standard").addClass("active");
+    $(this).parents("#plan-popup-real").fadeOut(300);
+})
 
 $(".material_inner_logo.sideContent").click(function(){
     $(this).parents(".material_inner_side").toggleClass("active");

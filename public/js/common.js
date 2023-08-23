@@ -45,6 +45,12 @@ $(".plan_nav_title").click(function(){
             $("#plan_life_map").fadeOut(300);
         }
     }
+    if($(this).hasClass("plan_nav_title-space")) {
+        $(".plan_nav_second_all").addClass("active").siblings("li").removeClass("active");
+        $(".plan_space_item#all").addClass("active").siblings(".plan_space_item").removeClass("active");
+        $(".plan_space_item#all").find(".plan_title").addClass("active").siblings(".plan_space_item").removeClass("active");
+        $(".plan_space_item#all").siblings(".plan_space_item").find(".plan_title").removeClass("active");
+    }
 })
 
 $(".plan_nav_second li").click(function(){
@@ -63,6 +69,12 @@ $(".plan_nav_second li").click(function(){
         let glasses = $(target).data("glasses");
         $(".plan_life_glasses").fadeOut(300);
         $(glasses).fadeIn(300);
+    }
+
+    if($(this).hasClass("plan_nav_second_real")) {
+        $(".plan_real_btn_img.deg").addClass("active").siblings(".plan_real_btn_img").removeClass("active");
+        $("#plan_real_pic_static").fadeIn(300);
+        $("#plan_real_pic_video").fadeOut(300);
     }
 })
 

@@ -1934,7 +1934,7 @@ ul {
 }
 
 .future_place.museum {
-  top: 34%;
+  top: 37%;
   left: 38.7%;
 }
 
@@ -1953,7 +1953,7 @@ ul {
 }
 
 .future_place.uni {
-  top: 35%;
+  top: 38%;
   left: 42%;
 }
 
@@ -1970,7 +1970,7 @@ ul {
 }
 
 .future_place.asian {
-  top: 45.5%;
+  top: 48.5%;
   left: 45.5%;
 }
 
@@ -1989,7 +1989,7 @@ ul {
 }
 
 .future_place.center {
-  top: 41%;
+  top: 44%;
   left: 53%;
 }
 
@@ -2011,7 +2011,7 @@ ul {
 }
 
 .future_place.hotel {
-  top: 41%;
+  top: 44%;
   left: 56.5%;
 }
 
@@ -2090,14 +2090,15 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 2.9vw;
+  bottom: 3.9vw;
   right: 5.34vw;
+  z-index: 7;
 }
 
 .future_circle_item {
   position: relative;
-  width: 12vw;
-  height: 12vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2995,6 +2996,10 @@ ul {
   margin-left: auto;
   margin-right: 1.2vw;
   display: block;
+}
+
+.future-price .future_circle {
+  bottom: 10vw;
 }
 
 @media screen and (min-width: 2500px) {

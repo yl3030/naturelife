@@ -528,6 +528,11 @@
 .plan_life {
     &_pic {
         position: absolute;
+        &.pointer {
+            width: 2.28vw;
+            top: 3vw;
+            right: 16vw;
+        }
     }
     &_b1 {
         width: 49vw;

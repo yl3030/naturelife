@@ -4171,6 +4171,12 @@ ul {
   position: absolute;
 }
 
+.plan_life_pic.pointer {
+  width: 2.28vw;
+  top: 3vw;
+  right: 16vw;
+}
+
 .plan_life_b1 {
   width: 49vw;
   top: 2vw;

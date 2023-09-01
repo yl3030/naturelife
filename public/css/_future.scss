@@ -327,6 +327,47 @@
         animation-delay: 1s;
         opacity: 0;
     }
+    .yueamei-name {
+        top: 52.5%;
+        left: 30.7%;
+        position: absolute;
+        animation: fadeup 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        &_inner {
+            font-size: 1.5vw;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            transform: rotate(11deg);
+        }
+    }
+    .chongcheng-name {
+        top: 63.8%;
+        left: 54.7%;
+        position: absolute;
+        animation: fadeup 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+        &_inner {
+            font-size: 1.5vw;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            transform: rotate(-23deg);
+        }
+    }
+    .chingpu {
+        top: 34%;
+        left: 23%;
+        width: 10.3vw;
+        position: absolute;
+        animation: fadeup 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+    }
     @media screen and (min-width: 2500px) {
         &_place {
             position: absolute;
@@ -486,10 +527,9 @@
     }
 }
 
-
 @keyframes fadeup {
     from {
-        transform: translateY(5%);
+        transform: translateY(5vw);
         opacity: 0;
     }
     to {

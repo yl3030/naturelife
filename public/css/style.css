@@ -2325,6 +2325,60 @@ ul {
   opacity: 0;
 }
 
+.future .yueamei-name {
+  top: 52.5%;
+  left: 30.7%;
+  position: absolute;
+  -webkit-animation: fadeup 0.5s ease-in-out forwards;
+          animation: fadeup 0.5s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+.future .yueamei-name_inner {
+  font-size: 1.5vw;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
+}
+
+.future .chongcheng-name {
+  top: 63.8%;
+  left: 54.7%;
+  position: absolute;
+  -webkit-animation: fadeup 0.5s ease-in-out forwards;
+          animation: fadeup 0.5s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.future .chongcheng-name_inner {
+  font-size: 1.5vw;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
+}
+
+.future .chingpu {
+  top: 34%;
+  left: 23%;
+  width: 10.3vw;
+  position: absolute;
+  -webkit-animation: fadeup 0.5s ease-in-out forwards;
+          animation: fadeup 0.5s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (min-width: 2500px) {
   .future_place {
     position: absolute;
@@ -2463,8 +2517,8 @@ ul {
 
 @-webkit-keyframes fadeup {
   from {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
     opacity: 0;
   }
   to {
@@ -2476,8 +2530,8 @@ ul {
 
 @keyframes fadeup {
   from {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
     opacity: 0;
   }
   to {

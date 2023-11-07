@@ -5908,6 +5908,26 @@ ul {
   width: 32vw;
 }
 
+.material_inner.sakura-elevator .bigpic {
+  width: 65vw;
+  margin-top: 2vw;
+  mix-blend-mode: darken;
+}
+
+.material_inner.sakura-elevator .material_inner_side_content ul:last-child {
+  margin-top: 4vw;
+}
+
+.material_inner.sakura-elevator .material_inner_side_content ul .se-list {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.material_inner.sakura-elevator .material_inner_side_content ul .se-list:hover {
+  color: #1B94D4;
+}
+
 @media screen and (min-width: 2500px) {
   .material_inner_logo {
     margin-bottom: 130px;

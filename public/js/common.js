@@ -187,6 +187,12 @@ $(".material-popup").click(function (event) {
     }
 });
 
+$(".se-list").click(function(){
+    let popup = $(this).data("popup");
+    $(".material-popup").fadeIn(300).css("display","flex");
+    $(popup).addClass("active").siblings(".material-popup_slider").removeClass("active");
+})
+
 $(".page_nav .back").click(function(){
     history.back();
 })
